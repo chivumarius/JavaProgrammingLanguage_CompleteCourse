@@ -1,0 +1,79 @@
+
+
+	Facade 
+
+
+
+
+
+
+  • Facade is a structural design pattern that provides a simplified interface to a library, a framework, or any other complex set of classes. 
+
+
+
+
+
+ EXAMPLE 1:
+
+  • When you call a shop to place a phone order, an operator is your facade to all services and departments of the shop. 
+
+
+  • The operator provides you with a simple voice interface to the ordering system, payment gateways, and various delivery services. 
+
+
+
+
+
+ EXAMPLE 2:
+
+  • Another good example can be the startup of a computer. 
+
+  • When a computer starts up, it involves the work of CPU, memory, hard drive, etc. 
+
+
+  • To make it easy to use for users, we can add a facade which wrap the complexity of the task, and provide one simple interface instead. 
+
+
+
+
+
+
+ STRUCTURE
+
+
+  • The Facade provides convenient access to a particular part of the subsystem's functionality.   
+
+    ♦ It knows where to direct the client's request and how to operate all the moving parts. 
+
+
+
+  • An Additional Facade class can be created to prevent polluting a single facade with unrelated features that might make it yet another complex structure. 
+
+    ♦ Additional facades can be used by both clients and other facades. 
+
+
+
+  • The Complex Subsystem consists of dozens of various objects. 
+
+    ♦ To make them all do something meaningful, you have to dive deep into the subsystem's implementation details, such as initializing objects in the correct order and supplying them with data in the proper format. 
+
+
+
+
+  • Subsystem classes aren't aware of the facade's existence. 
+
+    ♦They operate within the system and work with each other directly. 
+
+
+
+  • The Client uses the facade instead of calling the subsystem objects directly. 
+
+ 
+
+
+
+
+
+
+
+

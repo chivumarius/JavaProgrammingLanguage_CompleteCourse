@@ -1,0 +1,68 @@
+
+
+
+		Theory - State Design Pattern
+
+
+
+
+
+
+
+  • State is a behavioral design pattern that lets an object alter its behavior when its internal state changes. It appears as if the object changed its class.
+
+
+
+  • If we have to change behavior of an object based on its state, we can have a state variable in the Object and use if-else condition block to perform different actions based on the state.
+
+
+  • State pattern is used to provide a systematic and lose-coupled way to achieve this through Context and State implementations.
+
+
+
+
+
+○ Real World Example
+
+
+  • The buttons and switches in your smartphone behave differently depending on the current state of the device:
+
+	•► When the phone is unlocked, pressing buttons leads to executing various functions.
+	•► When the phone is locked, pressing any button leads to the unlock screen.
+	•► When the phone's charge is low, pressing any button shows the charging screen.
+
+
+
+
+
+○ Structure
+
+
+  1- Context stores a reference to one of the concrete state objects and delegates to it all state-specific work.
+
+     • The context communicates with the state object via the state interface.
+     • The con-text exposes a setter for passing it a new state object.
+
+
+  2- The State interface declares the state-specific methods.
+    
+     • These methods should make sense for all concrete states because you don't want some of your states to have useless methods that will never be called.
+
+
+
+  3- Concrete States provide their own implementations for the state- specific methods.
+     
+     • To avoid duplication of similar code across multiple states, you may provide intermediate abstract classes that encapsulate some common behavior.
+
+
+
+  4- State objects may store a backreference to the context object.
+
+     • Through this reference, the state can fetch any required info from the context object, as well as initiate state transitions.
+
+     • Both context and concrete states can set the next state of the context and perform the actual state transition by replacing the state object linked to the context.
+
+
+
+
+

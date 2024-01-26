@@ -1,0 +1,3 @@
+Greetings to all,
+
+I am Marius Chivu, your instructor, and in this course we will study the Java programming language together.

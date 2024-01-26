@@ -1,0 +1,54 @@
+
+
+		Theory - Observer Design Pattern
+
+
+
+
+
+  • Observer pattern is used when there is one-to-many relationship between objects such as if one object is modified, its dependent objects are to be notified automatically. 
+
+
+
+
+
+○ Real-World Example 
+
+
+  • If you subscribe to a newspaper or magazine, you no longer need to go to the store to check 
+
+
+  • if the next issue is available. Instead, the publisher sends new issues directly to your mail-box right after publication or even in advance. 
+
+
+  • The publisher maintains a list of subscribers and knows which magazines they're interested in. 
+
+
+  • Subscribers can leave the list at any time when they wish to stop the publisher sending new magazine issues to them. 
+
+
+
+
+
+○ Structure 
+
+
+  1- The Publisher issues events of interest to other objects. These events occur when the publisher changes its state or executes some behaviors. Publishers contain a subscription infrastructure that lets new subscribers join and current subscribers leave the list. 
+
+
+  2- When a new event happens, the publisher goes over the subscription list and calls the notification method declared in the subscriber interface on each subscriber object. 
+
+
+  3- The Subscriber interface declares the notification interface. In most cases, it consists of a single update method. The method may have several parameters that let the publisher pass some event details along with the update. 
+
+
+  4- Concrete Subscribers perform some actions in response to notifications issued by the publisher. All of these classes must implement the same interface so the publisher isn't coupled to concrete classes. 1 
+
+
+  5- The Client creates publisher and subscriber objects separately and then registers subscribers for publisher updates. 
+
+
+
+
+
+

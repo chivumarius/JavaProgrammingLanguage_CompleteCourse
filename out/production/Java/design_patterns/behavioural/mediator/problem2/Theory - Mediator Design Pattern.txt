@@ -1,0 +1,48 @@
+
+
+		Theory - Mediator Design Pattern
+
+
+
+
+  • Mediator is a behavioral design pattern that lets you reduce chaotic dependencies between objects. The pattern restricts direct communications between the objects and forces them to collaborate only via a mediator object.
+
+
+
+
+
+
+○ Real Example:
+
+  • Without the air traffic controller, pilots would need to be aware of every plane in the vicinity of the airport, discussing landing priorities with a committee of dozens of other pilots. That would probably skyrocket the airplane crash statistics.
+
+
+  • The tower doesn't need to control the whole flight. It exists only to enforce constraints in the terminal area because the number of involved
+actors there might be overwhelming to a pilot.
+
+
+
+
+
+
+○ Structure
+
+  1- Components are various classes that contain some business logic. Each component has a reference to a mediator, declared with the type of the mediator interface.
+     
+     • The component isn't aware of the actual class of the mediator, so you can reuse the component in other programs by linking it to a different mediator.
+
+     • Components must not be aware of other components. If something important happens within or to a component, it must only notify the mediator. When the mediator receives the notification, it can easily identify the sender, which might be just enough to decide what component should be triggered in return.
+
+
+
+  2- The Mediator interface declares methods of communication with components, which usually include just a single notification method.
+
+     • Components may pass any context as arguments of this method, including their own. objects, but only in such a way that no coupling occurs between a receiving component and the sender's class.
+
+
+
+  3- Concrete Mediators encapsulate relations between various components. Concrete mediators often keep references to all components they manage and sometimes even manage their lifecycle.
+
+
+
+

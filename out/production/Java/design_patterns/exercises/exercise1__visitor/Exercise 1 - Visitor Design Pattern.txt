@@ -1,0 +1,48 @@
+
+
+		Exercise 1 - Visitor Design Pattern
+
+
+
+
+
+
+
+  • Consider the following classes:
+
+	•► Item
+	•► Book 
+	•► Dvd 
+
+
+
+
+  • We want to apply the Visitor design pattern to this structure to have two visitors:
+	- The first displays "title" and "author" for a book, and "title" and "star" for a DVD.
+	-The second displays all the information of an item.
+
+
+
+
+
+
+
+○ Requirements:
+	
+
+     a) Draw the class diagram showing the use of this pattern for this structure.
+
+
+     b) Write the Java code corresponding to the class diagram of question (a); if there are changes to the "Item", "Book" and "Dvd" classes, write only the modified code and/or the code to be added.
+
+
+     c) Give an example of what the user must write in the main() method to apply the two visitors on the instance:
+
+
+
+
+
+
+
+
+

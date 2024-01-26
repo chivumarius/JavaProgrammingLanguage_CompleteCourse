@@ -1,0 +1,51 @@
+
+
+		Theory - Interpreter Design Pattern
+
+
+
+
+
+
+  • Interpreter pattern is used to define a grammatical representation for a language and provides an interpreter to deal with this grammar.
+
+
+• This pattern involves implementing an expression interface which tells to interpret a particular context. This pattern is used in SQL parsing, symbol processing engine etc.
+
+
+
+
+
+
+○ Structure
+
+
+  1. AbstractExpression (Expression):
+
+     • Declares an interpret() operation that all nodes (terminal and nonterminal) in the AST overrides.
+
+
+  2. NonterminalExpression (AdditionExpression, SubtractionExpression, and 
+     • MultiplicationExpression): Implements the interpret() operation for all nonterminal expressions.
+
+
+  3. Context (String):
+
+     • Contains information that is global to the interpreter. It is this String expression with the Postfix notation that has to be interpreted and parsed.
+
+
+  4. Client (ExpressionParser):
+
+     • Builds (or is provided) the AST assembled from Terminal Expression and NonTerminalExpression. The Client invokes the interpret() operation.
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+
+
+  (1) Create Current Classes.
+
+  (2) Create the Interface Class "ServiceAdapter.java"m which will contain the Method we want to Create in a different way than in the Current Class.
+
+   (3) Create the Adapter Parent Class, which will inherit the Current Parent Class and implement the Interface, which contains the Modified Method.
+	• "Adapter" Class → Connect "Service" Class → with "Client" Class.
+
+   (4) Create Adapter Child Classes, which will inherit the Adapter Parent Class.
+
+
+
+  "Program Overview":
+
+   • To execute the program rRun the "Client.java" file.

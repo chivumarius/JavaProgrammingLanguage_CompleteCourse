@@ -1,0 +1,68 @@
+
+
+			Singleton 
+
+
+
+
+
+
+  • Singleton is a creational design pattern that lets you ensure that a class has only one instance, while providing a global access point to this instance. 
+
+
+  • The Singleton pattern solves two problems at the same time, violating the Single Responsibility Principle: 
+	•► Ensure that a class has just a single instance. 
+
+
+
+
+
+
+○ Why would any-one want to control how many instances a class has? 
+
+
+  • The most common reason for this is to control access to some shared resource. 
+
+
+  • For example: 
+	•► a Database or 
+	•► a File. 
+
+
+
+
+
+○ Real-World Analogy 
+
+
+  • The government is an excellent example of the Singleton pattern. 
+
+    ♦ A country can have only one official government. 
+
+
+
+  • Regardless of the personal identities of the individuals who form governments, the title, "The Government of X", is a global point of access that identifies the group of people in charge. 
+
+
+
+
+
+○ Structure 
+
+
+  • The Singleton class declares the static method getlnstance() that returns the same instance of its own class. 
+Client 
+
+
+  • Singleton 
+- instance: Singleton  - Singleton() 
+
+
+  • The Singleton's constructor should be hidden from the client code. 
+    ♦ Calling the getlnstance() should be the only way of getting the Singleton object. 
+
+
+
+
+
+

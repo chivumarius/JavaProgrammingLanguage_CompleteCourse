@@ -1,0 +1,50 @@
+
+
+		Exercise 3 - Decorator Design Pattern
+
+
+
+
+
+
+
+  • A car sales agency displays its sales prices as follows:
+
+    Car		Without Options	 Option AC	Option ABS	Option AirBag
+Nissan Sunny 	15000		 +1250		+900		+950
+Honda Civic	18000		 +1500		+1000		+1150	
+
+
+
+
+
+
+
+  • If we want to buy a Nissan Sunny car with ABS and Airbag, we will have to pay 15000 + 900 + 950 $.
+
+
+  • A possible implementation of cars with options will be as follows:
+
+
+  • So on, so 5 classes for each car to represent the different combinations of options.
+
+
+  a) What design pattern can we improve on this design?
+	•► Use "Decorator" Design Pattern.
+
+  b) Give the class diagram of a new design based
+on the chosen pattern.
+
+
+  c) Develop in Java the implementation of this class diagram; take the case of a single car NissanSunny and only one option With air conditioning.
+
+
+
+
+
+
+
+
+
+
+

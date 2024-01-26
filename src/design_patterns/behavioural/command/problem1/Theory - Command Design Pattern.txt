@@ -1,0 +1,71 @@
+
+
+		Theory - Command Design Pattern
+
+
+
+
+
+
+  • Command is a behavioral design pattern that turns a request into a standalone object that contains all information about the request. 
+
+
+  • This transformation lets you parameterize methods with different requests, delay or queue a request's execution, and support undoable operations. 
+
+
+
+
+○ Real World Example 
+
+
+  • You get to a nice restaurant. A friendly waiter approaches you and quickly takes your order, writing it down on a piece of paper. The waiter goes to the kitchen and sticks the order on the wall. 
+
+  • After a while, the order gets to the chef, who reads it and cooks the meal accordingly. 
+
+ 
+  • The cook places the meal on a tray along with the order. The waiter discovers the tray, checks the order to make sure everything is as you wanted it, and brings everything to your table. 
+
+
+  • The paper order serves as a command. 
+
+
+
+
+○ Structure 
+
+
+  1- The Sender class (invoker) is responsible for initiating requests. This class must have a field for storing a reference to a command object. The sender triggers that command instead of sending the request directly to the receiver. 
+
+  • Note that the sender isn't responsible for creating the command object. Usually, it gets a pre-created command from the client via the constructor. 
+
+
+  2- The Command interface usually declares just a single method for executing the command. 
+
+
+
+  3- Concrete Commands implement various kinds of requests. A concrete
+command isn't supposed to perform the work on its own, but rather to pass the call to one of the business logic objects.
+
+
+  • However, for the sake of simplifying the code, these classes can be merged.
+
+
+
+  4- The Receiver class contains
+some business logic. Almost any object may act as a receiver.
+
+  • Most commands only handle the details of how a request is passed to the receiver, while the receiver itself does the actual work.
+
+
+  5- The Client creates and configures concrete command objects.
+
+
+
+
+
+
+
+
+
+
+

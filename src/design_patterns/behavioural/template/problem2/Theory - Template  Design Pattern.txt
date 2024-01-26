@@ -1,0 +1,45 @@
+
+
+		Theory - Template (or Template  Method) Design Pattern
+
+
+
+
+
+  • Template Method is a behavioral design pattern that defines the skeleton of an algorithm in the superclass but lets subclasses override specific steps of the algorithm without changing its structure.
+
+
+  • Use the Template Method pattern when you want to let clients extend only particular steps of an algorithm, but not the whole algorithm or its
+structure.
+
+
+
+
+
+○ Real-World Example
+
+
+  • A typical architectural plan can be slightly altered to better fit the client's needs.
+
+
+  • Each building step, such as laying the foundation, framing, building walls, installing plumbing and wiring for water and electricity, etc., can be slightly changed to make the resulting house a little bit different from others
+
+
+
+
+
+○ Structure
+
+  1- The Abstract Class declares methods that act as steps of an algorithm, as well as the actual template method which calls these methods in a specific order. The steps may either be declared abstract or have some default implementation.
+
+
+  2- Concrete Classes can override all of the steps, but not the template method itself.
+
+
+
+
+
+
+
+
+

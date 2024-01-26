@@ -1,0 +1,39 @@
+
+
+		Exercise 2 - Factory Design Pattern
+
+
+
+
+
+
+  • Consider the following classes:
+	- Computer
+	- PC
+	- Server
+
+	
+
+  a) We want to apply the Factory method design pattern for this structure. Write the Java code
+
+
+  b) Write a test program to test the pattern
+
+
+  
+  
+  c) Give the UML diagram for this structure
+     • We want to apply the Abstract Factory design pattern for this structure.
+
+
+  d) Write the corresponding java code for this program
+
+
+  e) Write a test code to run this exercise.
+
+
+
+
+
+
+
